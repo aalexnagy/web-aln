@@ -14,12 +14,12 @@ services:
   # MySQL service
   db:
     image: mysql:8.0
-    container_name: symfony_db
+    container_name: web_aln_db
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: symfony
-      MYSQL_USER: symfony
-      MYSQL_PASSWORD: symfonymysqlpassword
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
     ports:
       - "3306:3306"
     volumes:
