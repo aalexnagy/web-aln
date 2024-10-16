@@ -8,4 +8,5 @@
 /var/
 /vendor/
 /.cache_ggshield
+/.gitguardian.yaml
 ###< symfony/framework-bundle ###
